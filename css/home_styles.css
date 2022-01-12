@@ -147,6 +147,10 @@ header {
     object-fit: cover;
 }
 
+#bgm {
+    padding-bottom: 25px;
+}
+
 #desc {
     background-color: #fcd3f8;
     width: 1205px;
@@ -231,11 +235,33 @@ header {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
+    margin-top: 25px;
     background-color: rgb(231, 166, 212);
     width: 100%;
-    height: 55px;
-    padding: 10px;
+    padding: 15px;
     border-top: 2px solid rgb(77, 3, 54);
+}
+
+#foothead {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+#reflist {
+    border-top: 2px solid rgb(77, 3, 54);
+    padding-top: 10px;
+    padding-left: 25px;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 40%;
+}
+
+#reflist li {
+    padding-bottom: 5px;
+    font-size: 20;
+}
+
+#reflist a:link, a:visited {
+    color: rgb(61, 1, 131);
 }
