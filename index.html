@@ -6,7 +6,7 @@
             <meta charset="UTF-8">
             <meta name="author" content="Karl De Leon">
             <meta name="keywords" content="BanG Dream GBP!, Bandori, Garupa">
-            <meta name="revised" content="06-11-2021">
+            <meta name="revised" content="13-01-2021">
     
             <link rel="stylesheet" href="css/home_styles.css" type="text/css">
             <link rel="icon" href="images/images_home/bandori.png">
@@ -18,13 +18,13 @@
                     <section id="bands">
                         <button class="button">≡</button>
                         <section id="content">
-                            <div class="ppp"><a href="#">Poppin' Party</a></div>
-                            <div class="afr"><a href="#">Afterglow</a></div>
-                            <div class="pspr"><a href="#">Pastel*Palettes</a></div>
+                            <div class="ppp"><a href="htdocs/poppin_party.html">Poppin' Party</a></div>
+                            <div class="afr"><a href="htdocs/afterglow.html">Afterglow</a></div>
+                            <div class="pspr"><a href="htdocs/pastel_palettes.html">Pastel✽Palettes</a></div>
                             <div class="rsl"><a href="htdocs/roselia.html">Roselia</a></div>
-                            <div class="hhh"><a href="#">Hello, Happy World!</a></div>
-                            <div class="mnc"><a href="#">Morfonica</a></div>
-                            <div class="ras"><a href="#">RAISE A SUILEN</a></div>
+                            <div class="hhh"><a href="htdocs/harohapi.html">Hello, Happy World!</a></div>
+                            <div class="mnc"><a href="htdocs/morfonica.html">Morfonica</a></div>
+                            <div class="ras"><a href="htdocs/raise_a_suilen.html">RAISE A SUILEN</a></div>
                         </section>
                     </section>
 
@@ -32,15 +32,11 @@
                 </section>
 
                 <section id="righthead">
-                    <a class="bandori_en" href="#" onclick='window.open("https://en.bang-dream.com/");return false;'><img src="images/images_home/bandoriwebsite_en.png" height="56px" width="56px" alt="Official EN"></a>
-                    <a class="bandori_jp" href="#" onclick='window.open("https://bang-dream.com/");return false;'><img src="images/images_home/bandoriwebsite_jp.png" height="56px" width="56px" alt="Official JP"></a>
-                    <a class="twt_en" href="#" onclick='window.open("https://twitter.com/bangdreamgbp_EN");return false;'><img src="images/images_home/twitteren.png" height="55px" width="55px" alt="EN TWT"></a>
-                    <a class="twt_jp" href="#" onclick='window.open("https://twitter.com/bang_dream_info");return false;'><img src="images/images_home/twitterjp.png" height="55px" width="55px" alt="JP TWT"></a>
-                    <a class="yt_en" href="#" onclick='window.open("https://www.youtube.com/BanGDreamGirlsBandParty");return false;'><img class="yt" src="images/images_home/yt_bangdream.jpg" height="55px" width="55px" alt="EN YT"></a>
-                    <a class="yt_jp" href="#" onclick='window.open("https://www.youtube.com/channel/UCN-bFIdJM0gQlgX7h6LKcZA");return false;'><img class="yt" src="images/images_home/yt_bangdreamgbp.jpg" height="55px" width="55px" alt="JP YT"></a>
-                    <a class="discord" href="#" onclick='window.open("https://discord.com/invite/bangdream");return false;'><img src="images/images_home/discord.png" height="57px" width="57px" alt="Unofficial Disc Server"></a>
-                    <a class="fb" href="#" onclick='window.open("https://www.facebook.com/BanGDreamGBP/");return false;'><img src="images/images_home/fb.png" height="54px" width="54px" alt="EN FB"></a>
-                    <a class="insta" href="#" onclick='window.open("https://www.instagram.com/bang_dream_official_/");return false;'><img src="images/images_home/insta.png" height="54px" width="54px" alt="EN IG"></a>
+                    <div id="bandorien"><a href="#" onclick='window.open("https://en.bang-dream.com/");return false;'></a></div>
+                    <div id="bandorijp"><a href="#" onclick='window.open("https://bang-dream.com/");return false;'></a></div>
+                    <div id="twten"><a href="#" onclick='window.open("https://twitter.com/bangdreamgbp_EN");return false;'></a></div>
+                    <div id="twtjp"><a href="#" onclick='window.open("https://twitter.com/bang_dream_info");return false;'></a></div>
+                    <div id="yt"><a href="#" onclick='window.open("https://www.youtube.com/BanGDreamGirlsBandParty");return false;'></a></div>
                 </section>
             </header>
     
@@ -50,15 +46,6 @@
     
             <section id="title">
                 <h1> Welcome to the BanG Dream! Franchise</h1>
-
-                <audio autoplay controls id="bgm">
-                    <source src="mmfiles/index_mm/yes_bangdream.mp3">
-                </audio>
-
-                <script>
-                    var audio = document.getElementById("bgm");
-                    audio.volume = 0.35;
-                </script>
             </section>
     
             <section id="desc">
@@ -70,12 +57,13 @@
                         are capable of playing their characters' respective instruments and perform live onstage.
                     </article>
     
-                    <img class="descimg" src="images/images_home/initial_bandori.png" height="280px" width="600px">
+                    <img class="descimg" src="images/images_home/initial_bandori.png" height="260px" width="600px">
                 </section>
     
                 <section id="cont">
-                    <img class="descimg2" src="images/images_home/fiiba.png" height="325px" width="550px">
+                    <img class="descimg2" src="images/images_home/fiiba.png" height="345px" width="600px">
                     <article>
+                        <br>
                         The project was created by Kidani Takaani, the founder and president of Bushiroad, and started as a manga in 2015 with the original story written by Nakamura Kou. 
                         Throughout the years, it expanded to other media.  
                         <br> <br>
@@ -87,6 +75,7 @@
     
                 <section id="cont">
                     <section>
+                        <br>
                         The mobile rhythm game called "BanG Dream! Girls Band Party" was published by Bushiroad and Craft Egg Inc. On March 2017, it was introduced to iOS and Android platforms in Japan. 
                         The Taiwanese and Korean versions soon followed on Sept. 2017 and Feb. 2018 which were published by Mobimon Inc. and Kakao Games respectively. The English version was then
                         released on April 2018, followed by the Chinese version on May 2019. On Sept. 2021, the Nintendo Switch version was released which made the game playable to a new platform. 
@@ -99,29 +88,31 @@
     
                 <section id="cont">
                     <section>
-                        <img class="descimg2" src="images/images_home/bando.png" height="310px" width="600px">
+                        <img class="descimg2" src="images/images_home/bando.png" height="330px" width="600px">
                     </section>
     
                     <section>
+                        <br>
                         In the game, you can play different levels of songs (Easy, Normal, Hard, Expert, Special) from different bands. An option whether to play solo or multi live with other players is present.
                         You can also download and read the stories of each band and learn how they all came together. 
                         <br><br>
-                        There is also a gacha where you can use your stars to obtain the cards of your favorite band and/or characters. Level up these cards and use area items to form
+                        Stars are the gacha currency of the game which are earned. You can use these to obtain the cards of your favorite band characters. Level up these cards and use area items to form
                         a powerful band. The game never runs out of content for there are new events weekly.
                     </section>
                 </section>
     
                 <section id="cont_L">
                     <section>
+                        <br>
                         Every week, there is a live broadcast on the Official Bandori JP YouTube Channel called "Bandori! TV Live". It is always aired on Thursday 22:00 JST. The first episode of TV Live aired
                         on January 23, 2020 which was hosted by Itou Ayasa (VA of Ichigaya Arisa), Aiba Aina (VA of Minato Yukina), Raychell (VA of Wakana Rei), and Kohara Riko (VA of Asahi Rokka).
                         <br><br>
-                        The show has different segments with the hosts changing each week. The hosts (voice actresses), in some cases with the staff, deliver news to the audience related to 
+                        The show has different segments with different hosts and guests each week. The hosts (voice actresses), in some cases with the staff, deliver news to the audience related to 
                         the activities, details, and programs of the franchise as well as product and merchandise information.
                     </section>
     
                     <section>
-                        <img class="descimg" src="images/images_home/bandoritvlive_48.jpg" height="380px" width="658px">
+                        <img class="descimg" src="images/images_home/bandoritvlive_48.jpg" height="350px" width="600px">
                     </section>
                 </section>
             </section>
@@ -133,7 +124,7 @@
                 
                 <section id="arrange">
                     <div class="bands">
-                        <a href=""><img src="images/images_home/popipa.png"></a>
+                        <a href="htdocs/poppin_party.html"><img src="images/images_home/popipa.png"></a>
                     </div>
     
                     <div class="bands">
@@ -143,11 +134,11 @@
     
                 <section id="arrange">
                     <div class="bands">
-                        <a href=""><img src="images/images_home/morfonica.png"></a>
+                        <a href="htdocs/morfonica.html"><img src="images/images_home/morfonica.png"></a>
                     </div>
     
                     <div class="bands">
-                        <a href=""><img src="images/images_home/ras.png"></a>
+                        <a href="htdocs/raise_a_suilen.html"><img src="images/images_home/ras.png"></a>
                     </div>
                 </section>
             </section>
@@ -160,18 +151,18 @@
                 <section id="arrange">
                     <div class="bands">
                         <div class="pasupare">  
-                            <a href=""><img src="images/images_home/pasupare.jpg"></a>
+                            <a href="htdocs/pastel_palettes.html"><img src="images/images_home/pasupare.jpg"></a>
                         </div>
                     </div>
     
                     <div class="bands">
-                        <a href=""><img src="images/images_home/ag.png"></a>
+                        <a href="htdocs/afterglow.html"><img src="images/images_home/ag.png"></a>
                     </div>
                 </section>
     
                 <section id="arrange">
                     <div class="bands">
-                        <a href=""><img src="images/images_home/harohapi.png"></a>
+                        <a href="htdocs/harohapi.html"><img src="images/images_home/harohapi.png"></a>
                     </div>
                 </section>
             </section>
@@ -214,6 +205,11 @@
                             Nishio Shigure. (2021). An attempt was made to stay in character | Bandori TV Live #48. YouTube.
                             <br>
                             <a href="https://www.youtube.com/watch?v=G_0GD22dQfo">https://www.youtube.com/watch?v=G_0GD22dQfo</a>
+                        </li>
+                        <li>
+                            Blogger Sans Medium font. (2017). Whatfontis.com. 
+                            <br>
+                            <a href="https://www.whatfontis.com/FF_Blogger-Sans-Medium.font">https://www.whatfontis.com/FF_Blogger-Sans-Medium.font</a>
                         </li>
                     </ul>
             </footer>

@@ -1,7 +1,12 @@
 body {
     background-color:  #fbeaf5;
-    font-family: Arial Rounded MT;
+    font-family: newFont;
     margin: 0;
+}
+
+@font-face {
+    font-family: newFont;
+    src: url("../fonts/OT-tt/Blogger\ Sans-Medium.ttf");
 }
 
 header {
@@ -14,21 +19,23 @@ header {
     padding: 10px;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 .button {
     background-color: rgb(231, 166, 212);
     color: rgb(28, 0, 32);
     padding: 0 10 0 10;
-    font-size: 60px;
-    height: 65px;
+    font-size: 70px;
+    height: 70px;
     border: none;
 }
  
 #bands {
-    padding: 0 0 0 5;
+    font-weight: bold;
+    padding: 6 0 0 5;
     position: relative;
-    top: -10px;
+    top: -12px;
     left: -15px;
     display: inline-block;
 }
@@ -38,7 +45,7 @@ header {
     position: absolute;
     border: 1px solid rgb(77, 3, 54);
     background-color: rgb(243, 222, 237);
-    min-width: 195px;
+    min-width: 185px;
 }
 
 .ppp, .afr, .pspr, .rsl, .hhh, .mnc, .ras {
@@ -102,30 +109,71 @@ header {
 }
 
 #lefthead {
+    display: flex;
     padding: 0 0 0 15;
     float: left;
 }
 
 #righthead {
+    overflow: auto;
+    position: relative;
+    top: 2px;
     float: right;
+    display: flex;
 }
 
-#lefthead img, #righthead img {
+#lefthead img, #righthead a{
     padding-right: 5px;
     opacity: 1;
     transition: 0.25s ease-in-out;
 }
 
-#lefthead a:hover img, #righthead a:hover img {
+#lefthead a:hover img, #righthead div:hover a {
     opacity: 0.25;
 }
 
-.insta {
-    padding-right: 20px;
+#righthead div {
+    padding: 0 5 0 3;
 }
 
-.yt {
-    border-radius: 50%;
+#bandorien > a{
+    width: 56px; height: 56px;
+    background: url('../images/images_home/sprites.png') -69px -5px;
+    display: inline-block;
+}
+
+#bandorijp > a{
+    width: 56px; height: 56px;
+    background: url('../images/images_home/sprites.png') -135px -5px;
+    display: inline-block;
+}
+
+#twten > a{
+    width: 56px; height: 56px;
+    background: url('../images/images_home/sprites.png') -203px -5px;
+    display: inline-block;
+}
+
+#twtjp > a{
+    width: 56px; height: 56px;
+    background: url('../images/images_home/sprites.png') -269px -5px;
+    display: inline-block;
+}
+
+#twten, #twtjp {
+    margin-top: 2;
+}
+
+#yt > a{
+    width: 45px; height: 56px;
+    background: url('../images/images_home/sprites.png') -5px -5px;
+    display: inline-block;
+    padding-right: 20;
+}
+
+#yt {
+    margin-top: 1;
+    margin-right: 13;
 }
 
 #title {
@@ -148,6 +196,7 @@ header {
 }
 
 #bgm {
+    z-index: 1;
     padding-bottom: 25px;
 }
 
@@ -254,7 +303,7 @@ footer {
     padding-left: 25px;
     overflow: scroll;
     overflow-x: hidden;
-    height: 40%;
+    height: 300px;
 }
 
 #reflist li {
